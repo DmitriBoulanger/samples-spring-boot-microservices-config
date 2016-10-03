@@ -36,7 +36,7 @@ server:
 eureka:
   client:
     serviceUrl:
-      defaultZone: http://localhost:8761/eureka/
+      defaultZone: http://192.168.99.100:8761/eureka/
   instance:
     preferIpAddress: true
     hostname: rating
@@ -44,7 +44,7 @@ ribbon:
   eureka:
     enabled: true
 neo4j:
-  uri: http://192.168.59.103:7474/db/data/
+  uri: http://192.168.99.100:7474/db/data/
   username: neo4j
   password: graphdb
   bootstrap: true

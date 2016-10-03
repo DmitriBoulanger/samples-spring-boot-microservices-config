@@ -11,7 +11,7 @@ spring:
         enabled: true
       server:
         git:
-          uri: https://github.com/DmitriBoulanger/samples-spring-boot-microservices-config
+          uri: http://github.com/DmitriBoulanger/samples-spring-boot-microservices-config
         health:
           repositories:
             movie:
@@ -45,7 +45,7 @@ spring:
     config:
       server:
         git:
-          uri: https://github.com/kbastani/spring-boot-microservice-config
+          uri: http://github.com/DmitriBoulanger/samples-spring-boot-microservices-config
         health:
           repositories:
             movie:
@@ -78,7 +78,7 @@ spring:
         enabled: true
       server:
         git:
-          uri: https://github.com/kbastani/spring-boot-microservice-config
+          uri: http://github.com/DmitriBoulanger/samples-spring-boot-microservices-config
         health:
           repositories:
             movie:
@@ -96,7 +96,7 @@ endpoints:
     sensitive: false
 eureka:
   instance:
-    hostname: ${vcap.application.uris[0]:localhost:8888}
+    hostname: ${vcap.application.uris[0]:192.168.99.100:8888}
     nonSecurePort: 80
   client:
     registerWithEureka: true
